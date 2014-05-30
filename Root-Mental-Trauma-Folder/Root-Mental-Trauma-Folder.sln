@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{770A2AF0-BC4C-633E-C391-CE38A37DD66F}") = "Root-Mental-Trauma-Folder", "Assembly-CSharp.csproj", "{E37F0909-8C53-7C65-1796-DA7BDBE49CC3}"
 EndProject
+Project("{770A2AF0-BC4C-633E-C391-CE38A37DD66F}") = "Root-Mental-Trauma-Folder", "Assembly-UnityScript.unityproj", "{6E7B3E6F-C39C-8D57-BDBB-864977E59661}"
+EndProject
+Project("{770A2AF0-BC4C-633E-C391-CE38A37DD66F}") = "Root-Mental-Trauma-Folder", "Assembly-UnityScript-Editor.unityproj", "{B0CF3BD9-D7BD-6BB0-7196-C95A6ACC2621}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,11 +17,19 @@ Global
 		{E37F0909-8C53-7C65-1796-DA7BDBE49CC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E37F0909-8C53-7C65-1796-DA7BDBE49CC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E37F0909-8C53-7C65-1796-DA7BDBE49CC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E7B3E6F-C39C-8D57-BDBB-864977E59661}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E7B3E6F-C39C-8D57-BDBB-864977E59661}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E7B3E6F-C39C-8D57-BDBB-864977E59661}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E7B3E6F-C39C-8D57-BDBB-864977E59661}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0CF3BD9-D7BD-6BB0-7196-C95A6ACC2621}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0CF3BD9-D7BD-6BB0-7196-C95A6ACC2621}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0CF3BD9-D7BD-6BB0-7196-C95A6ACC2621}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0CF3BD9-D7BD-6BB0-7196-C95A6ACC2621}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-												GlobalSection(MonoDevelopProperties) = preSolution
+																			GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

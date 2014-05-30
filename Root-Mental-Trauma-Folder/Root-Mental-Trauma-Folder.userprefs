@@ -1,8 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerMovementControl.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\tankController.js">
     <Files>
-      <File FileName="Assets\Scripts\PlayerMovementControl.cs" Line="34" Column="4" />
+      <File FileName="Assets\Scripts\pc_camera_setup.cs" Line="21" Column="4" />
+      <File FileName="Assets\Scripts\tankController.js" Line="23" Column="32" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
