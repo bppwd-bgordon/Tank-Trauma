@@ -1,6 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
+Project("{770A2AF0-BC4C-633E-C391-CE38A37DD66F}") = "Root-Mental-Trauma-Folder", "Assembly-CSharp-firstpass-vs.csproj", "{FA178ED9-B9C9-A833-C339-817F1BFC99DC}"
+EndProject
 Project("{770A2AF0-BC4C-633E-C391-CE38A37DD66F}") = "Root-Mental-Trauma-Folder", "Assembly-CSharp-vs.csproj", "{E37F0909-8C53-7C65-1796-DA7BDBE49CC3}"
 EndProject
 Global
@@ -9,6 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA178ED9-B9C9-A833-C339-817F1BFC99DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA178ED9-B9C9-A833-C339-817F1BFC99DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA178ED9-B9C9-A833-C339-817F1BFC99DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA178ED9-B9C9-A833-C339-817F1BFC99DC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E37F0909-8C53-7C65-1796-DA7BDBE49CC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E37F0909-8C53-7C65-1796-DA7BDBE49CC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E37F0909-8C53-7C65-1796-DA7BDBE49CC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -17,8 +23,8 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																				GlobalSection(MonoDevelopProperties) = preSolution
-														GlobalSection(MonoDevelopProperties) = preSolution
+																																		GlobalSection(MonoDevelopProperties) = preSolution
+													GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

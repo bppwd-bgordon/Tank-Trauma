@@ -25,13 +25,16 @@ rigidbody.centerOfMass.y = -0.9;
 
 function Update (){
 	WheelPosition();
-	
 	//Check if player is rotating
 }
 function FixedUpdate () {
 	//initialize
 	Control();	
 	rotationSpeed = Input.GetAxis("Horizontal") * maxRotTorque;
+}
+function LateUpdate ()
+{
+	WheelPosition();
 }
 
 function Control (){
@@ -41,12 +44,6 @@ function Control (){
 		wheelRL.motorTorque = maxDriveTorque * Input.GetAxis("Vertical");
 		wheelFL.motorTorque = maxDriveTorque * Input.GetAxis("Vertical");
 		wheelFR.motorTorque = maxDriveTorque * Input.GetAxis("Vertical");
-		if (currentSpeed < -topSpeed){
-			wheelRR.motorTorque = 0;
-			wheelRL.motorTorque = 0;
-			wheelFR.motorTorque = 0;
-			wheelFL.motorTorque = 0;
-		}
 	}
 	else{
 		wheelRR.motorTorque = 0;
@@ -54,10 +51,20 @@ function Control (){
 		wheelFR.motorTorque = 0;
 		wheelFL.motorTorque = 0;
 	}
-	
-	if(Mathf.Abs(rotationSpeed) > maxRotSpeed){
-		
+	if (Mathf.Abs(currentSpeed) > topSpeed){
+		wheelRR.motorTorque = 0;
+		wheelRL.motorTorque = 0;
+		wheelFR.motorTorque = 0;
+		wheelFL.motorTorque = 0;
 	}
+	if(Mathf.Abs(rotationSpeed) > maxRotSpeed){
+		wheelRR.motorTorque = 0;
+		wheelRL.motorTorque = 0;
+		wheelFR.motorTorque = 0;
+		wheelFL.motorTorque = 0;
+	}
+	
+	
 	
 	if(Input.GetAxis("Vertical")){
 	//If the vertical axis is pressed, remove the brakes

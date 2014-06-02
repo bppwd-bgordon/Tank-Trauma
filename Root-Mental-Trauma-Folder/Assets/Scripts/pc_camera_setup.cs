@@ -23,8 +23,10 @@ public class pc_camera_setup : MonoBehaviour {
 using UnityEngine;
 
 public class pc_camera_setup : MonoBehaviour {
-	
-	public Transform lookAtTarget;
+
+	public Transform lookAtTarget1;
+	public Transform lookAtTarget2;
+	public Transform lookAtTarget3;
 	public Transform frameTarget;
 	public float distance = 10.0f;
 	public float height = 5.0f;
@@ -32,13 +34,15 @@ public class pc_camera_setup : MonoBehaviour {
 	
 	private Vector3 direction;
 	private Vector3 wantedPosition;
+	private Vector3 lookAtTarget;
 	
 	void FixedUpdate () {
 		
-		if (!lookAtTarget || !frameTarget)
+		if (!frameTarget || !lookAtTarget1 || !lookAtTarget2 || !lookAtTarget3)
 			return;
-		
-		direction = (frameTarget.position - lookAtTarget.position);
+		lookAtTarget = lookAtTarget1.position + lookAtTarget2.position + lookAtTarget3.position;
+
+		direction = (frameTarget.position - lookAtTarget);
 		
 		wantedPosition = frameTarget.position + (direction.normalized * distance);
 		wantedPosition.y = wantedPosition.y + height;
@@ -46,7 +50,6 @@ public class pc_camera_setup : MonoBehaviour {
 		transform.position = Vector3.Lerp(transform.position, wantedPosition, damping * Time.deltaTime);
 		
 		transform.LookAt (lookAtTarget);
-		
 	}
 	
 }
