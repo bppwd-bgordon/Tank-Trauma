@@ -5,12 +5,11 @@
  
 // speed is the rate at which the object will rotate
 var speed = 5;
-var pivot : Transform;
 var shotOrigin : Transform;
   
 function Update () {
     // Generate a plane that intersects the transform's position with an upwards normal.
-    var playerPlane = new Plane(Vector3.up, pivot.position);
+    var playerPlane = new Plane(Vector3.up, transform.position);
  
     // Generate a ray from the cursor position
     var ray = Camera.main.ScreenPointToRay (Input.mousePosition);
@@ -27,11 +26,10 @@ function Update () {
         var targetPoint = ray.GetPoint(hitdist);
  
         // Determine the target rotation.  This is the rotation if the transform looks at the target point.
-        var targetRotation = Quaternion.LookRotation(targetPoint - pivot.position);
+        var targetRotation = Quaternion.LookRotation(targetPoint - transform.position);
  
         // Smoothly rotate towards the target point.
-      pivot.rotation = Quaternion.Slerp(pivot.rotation, targetRotation, speed * Time.deltaTime); // WITH SPEED
-      transform.rotation = pivot.rotation;
+      transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, speed * Time.deltaTime); // WITH SPEED
       //transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 1); // WITHOUT SPEED!!!
     }
 }

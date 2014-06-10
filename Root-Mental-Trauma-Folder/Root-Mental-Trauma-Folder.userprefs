@@ -1,12 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\turretLook.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Camera_Contol.cs">
     <Files>
-      <File FileName="Assets\Scripts\Camera_Contol.cs" Line="28" Column="5" />
-      <File FileName="Assets\Scripts\pc_camera_setup.cs" Line="1" Column="1" />
-      <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\TurretController.cs" Line="12" Column="54" />
-      <File FileName="Assets\Scripts\turretLook.js" Line="34" Column="43" />
+      <File FileName="Assets\Scripts\turretLook.js" Line="32" Column="119" />
+      <File FileName="Assets\Scripts\Camera_Contol.cs" Line="51" Column="64" />
+      <File FileName="Assets\Scripts\Map_PlayerPosition.cs" Line="9" Column="48" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
