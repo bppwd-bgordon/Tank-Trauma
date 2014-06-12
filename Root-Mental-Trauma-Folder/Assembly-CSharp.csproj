@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Camera_Contol.cs" />
+     <Compile Include="Assets\Scripts\Map_PlayerPosition.cs" />
      <Compile Include="Assets\Scripts\TrippyCam.cs" />
      <Compile Include="Assets\Scripts\TurretController.cs" />
      <Compile Include="Assets\Scripts\pc_camera_setup.cs" />
