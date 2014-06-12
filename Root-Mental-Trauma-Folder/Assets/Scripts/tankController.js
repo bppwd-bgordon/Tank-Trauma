@@ -88,13 +88,6 @@ function Control (){
 		wheelFR.motorTorque = maxRotTorque * -Input.GetAxis("Horizontal");
 	}
 	
-	/*if(Input.GetAxis("Horizontal"))
-	{
-		wheelRL.motorTorque = maxRotTorque * -Input.GetAxis("Horizontal");
-		wheelFL.motorTorque = maxRotTorque * -Input.GetAxis("Horizontal");
-		wheelRR.motorTorque = maxRotTorque * Input.GetAxis("Horizontal");
-		wheelFR.motorTorque = maxRotTorque * Input.GetAxis("Horizontal");
-	}*/
 	transform.Rotate(0,rotationSpeed,0);
 }
 

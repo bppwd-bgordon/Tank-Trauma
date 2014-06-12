@@ -23,9 +23,9 @@ public class Camera_Contol : MonoBehaviour {
 
 	private float lowZ;
 
-	private Vector3 lowXPos;
+	//private Vector3 lowXPos;
 	private Vector3 highXPos;
-	private Vector3 screenOrigin;
+//	private Vector3 screenOrigin;
 
 	void Start()
 	{
@@ -45,13 +45,13 @@ public class Camera_Contol : MonoBehaviour {
 		totalX = Mathf.Abs(lowX) + Mathf.Abs(highX);
 
 		// Determine screenPos of lowX and highX
-		lowXPos = camera.WorldToScreenPoint(new Vector3(lowX,0,0));
+		//lowXPos = camera.WorldToScreenPoint(new Vector3(lowX,0,0));
 
 		// Set up screen origin point relative to world point
-		screenOrigin = camera.WorldToScreenPoint(new Vector3(0,0,0));
+		//screenOrigin = camera.WorldToScreenPoint(new Vector3(0,0,0));
 
 		// If the player farthest to the left leaves the screen, adjust the camera's z to compensate
-		if(!(lowXPos.x < screenOrigin.x)) Debug.Log("A player is out of view!");
+		//if(!(lowXPos.x < screenOrigin.x)) Debug.Log("A player is out of view!");
 
 		// Determine wanted position:
 		// X: totalX is divided by two to put camera in center of players
